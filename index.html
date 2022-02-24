@@ -23,9 +23,36 @@
                     <div class="container-fluid">
                         <img class="img-fluid" src="logo.JPG" alt="">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <form class="d-flex ms-auto p-2 bd-highlight">
-                                <button class="btn btn-success" type="submit">Create New Post</button>
-                            </form>
+                            
+                            <button type="button" class="btn btn-success d-flex ms-auto p-2 bd-highlight" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Create New Post
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <textarea class="border border-secondary" name="" id="" cols="48" rows="3"></textarea>
+                                      <div class="d-flex justify-content-between w-25 mt-1">
+                                        <button class="btn btn-outline-secondary pb-0 pt-2"><i class="fas fa-camera h5"></i></button>
+                                        <button class="btn btn-outline-secondary pb-0 pt-2 me-3 ms-2 w-50"><i class="fas fa-map-marker-alt h5"></i></button>
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                      <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+ 
+                                  </div>
+                                </div>
+                              </div>
 
                             <div class="btn-group dropdown">
                                 <i class="fas fa-cog nav-link dropdown-toggle text-secondary" href=""
@@ -98,6 +125,9 @@
                 <img class="w-100" src="https://picsum.photos/id/58/300/200">
             </div>
         </div>
+
+
+
 
 
     </div>
